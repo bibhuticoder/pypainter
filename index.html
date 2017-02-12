@@ -1,0 +1,43 @@
+<html>
+<title>pyPainter</title>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jscolor.min.js"></script>  
+</head>
+
+<body>  
+   <div id="canvas-container">
+   		<div id="toolbar">	
+   	  		<button id="pencil" class="brush brush-active"><img src="images/pen.png" /></button>   	  	
+   	  		<button id="eraser" class="brush"><img src="images/eraser.png" /></button>   	  	
+   	  		<button id="marker" class="brush"><img src="images/marker.png" /></button>   	  	
+   	  		<button id="spray" class="brush"><img src="images/spray.png" /></button>   	  	
+   	  		<button id="doubleBrush" class="brush"><img src="images/brush.png" /></button>   	  	
+   	  		<button id="clear" class="brush"><img src="images/clear.png" /></button>
+   	  		<button id="undo" class="brush"><img src="images/undo.png" /></button>	   	  	
+   	  		<input type="range" name="slider" id="slider" max="10" min="1" value="1">
+   	  		<input id="color" class="jscolor" onchange="update(this.jscolor)"  value="#000000" />
+   	  	</div>
+   	   <canvas height="500" width="800" id="canvas"></canvas>   	   
+   </div>
+   <br>
+   <label>   	
+   	Draw something and hit this button to watch the timelapse.
+   </label>
+   <br>
+   <input type="text" id="speed" placeholder="10 and above" value="20" />
+   <br><br>
+   <button class="btn btn-success" id="replay">Watch</button>
+
+
+   
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+ 
+<script type="text/javascript" src="js/brush.js"></script> 
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
