@@ -2,7 +2,7 @@ function Brush(size, color, maxsize, minsize){
     this.size = size;    
     this.maxsize = maxsize;
     this.minsize = minsize; 
-    this.type = "";
+    this.type = "";    
 }
 
 Brush.prototype.draw = function(){}
@@ -125,13 +125,7 @@ Brush.prototype.changeBrush = function(name){
     else if(name === "eraser"){
         this.draw = this.eraser;
     }
-    else if(name === "clear"){
-        clear();
-    }
-    // else if(name === "undo"){
-    //     undo();
-    // }     
-
+   
     this.type = name; 
 }
 
@@ -144,9 +138,9 @@ function generateRandom(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-var clear = function () {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    //cache = [];
+var clear = function (clearCache) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);    
+    if(clearCache) cache = [];
 }
 
 // var undo = function () {

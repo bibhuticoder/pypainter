@@ -5,13 +5,19 @@ body {
     text-align: center;
 }
 
+.app{
+	margin-left: 0 auto;
+	height: auto;
+	width: auto;
+}
+
 #canvas{
 	border-style: solid;
 	border-color: gray;
 	border-width: 1px;
 	background-color: white;	
-	margin:5px;
-	cursor: default;
+	margin:5px;	
+	cursor: pointer;	
 }
 
 
@@ -25,14 +31,15 @@ body {
 	float: left;	
 	background-color: #373737;	
 	margin: 0 auto;	
-	margin-top: 50px;
+	margin-top: 10px;
 	margin-left: 100px;
-
+	float: left;
+	
 	user-select: none;
-        -moz-user-select: none;
-        -khtml-user-select: none;
-        -webkit-user-select: none;
-        -o-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 }
 
 #slider{
@@ -54,14 +61,13 @@ body {
 	margin-left: 10px;
 }
 
-.brush img{
+button img{
 	height: 22px;
 	width: 22px;
 }
 
 .brush-active{
-	opacity: 0.7;
-
+opacity: 0.7;
 }
 
 .brush:hover{
@@ -90,7 +96,13 @@ body {
 }
 
 input:focus{
-	outline: none;
+    outline: none;
 }
+
+.control-bar{
+	margin-left: 0 auto;	
+}
+
+
 
 
